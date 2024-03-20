@@ -1,0 +1,79 @@
+1。模版字符串：`my name is ${name}`   反引号，$含变量
+2、对象-结构体删除：delete
+3. 内置对象，网上查
+4.splice（起始下标，删除几个）--删除函数
+alert
+5.document.qs（‘css选择器’）选第一个dom元素 全部：qsa
+6.随机数函数：function random(n,m){
+    return Math.floor(Math.random()*(m-n+1))+n
+}
+7.小驼峰命名：aaaAaaa在js中修改style时可用
+8.classlist.toggle()切换class，有变没，没变有
+9.disabled 禁用吗？默认不禁用false
+10.setInterval（函数，间隔时间），关闭clearInterval
+箭头函数 var fn（n）=>{  }
+11.小手css cursor：pointer
+12.事件监听 addEventListener(' ',functio
+鼠标 click mouseenter mouseleave
+焦点focus blur失去
+键盘Keydown Keyup
+opacity 透明度
+13.trim（）去除输出字符串左右的空格
+14.queryselect（‘# id ’）
+15.css中   .a:属性 {  }表示当出现那个属性时发生
+16、先比较再赋值
+17.fn.stopPropagation停住冒泡捕获
+18.e.target点击的目标，真正触发的元素：e.target.tagName
+19.自定义属性：data-xx,使用时为dataset.xx
+20.阻止默认行为 e.preventDefault()
+21.load事件 window.addeventlistener('load',funcution(){}),或者给document
+     scroll 页面滚动 用于导航栏等 scrollleft，scrolltop（距离顶部距离）const设置初始值可以直接从那个值开始，scrollto（x，y）滚动到
+22。css中overflow：scroll 滚动条
+23、resize属性 浏览器窗口发生改变触发事件
+24.clientwidth和clientheight获取元素宽和高
+offcetwide offsethight只读元素宽高（包括border，padding）
+25.transform改变位置
+26.element.getgroundclientrect（）返回元素大小以及相对于视口的位置
+27.页面滚动css html{ scrol-behavior：smooth}
+28.new 新指定一个对象，this会指向；
+29.获取时间戳：+new Date( )
+30,查找dom：子节点.parentNode关闭最近的父节点，父元素.children查找子节点，兄弟元素，previouselementsibling前一个，nextelementsibling后一个
+31.creactelment创建新节点，appendchild（节点）插入到父节点最后，insretbefore（插入元素，在哪个前面）
+32.元素克隆 元素.cloneNode(true(包含子代）false（不包括后代，默认）)
+33.父元素.removeChild( )
+
+34、setTimeout（回调函数，等待时间）延迟执行；cleartimeout清除 只执行一次
+35.localstorage本地储存，localstorage.setItem（‘obj’，json.stringify(obj）)，用json时要用jason.prase()取
+localstorage.getitem('键)取     localstorage.removeitem('jian')删除
+
+36.map,join方法，map返回数组，foreach函数不返回数组
+
+37.正则表达式，const a = /.../   ;   a.test(  )检查有无符合规则的，返回true或者false ； exec（）查找指定字符串，返回数组
+38.元字符，测试工具tool.oschina.net   边界符：开头结尾，量词+，？，*，{ }
+[ ]匹配任意字符其中1个 多个用【】{数字}
+
+39.arcuments 伪数组接受实参；剩余函数 ...符号置于最末函数形参之前，获取多余参数，真数组：（a，b，...other）other为一个数组，包含a，b外的
+40. ...是展开运算符
+
+41 重点：箭头函数 fn = ( ) =>{ },箭头函数不产生this
+42.数组解构，const [a,b,c]=arr或者=[1,2,3]
+对象解构，const { 属性名}=变量名，两个名字相同
+
+43.构造函数，快速初始化过个对象function A（x,y,z）{this.x=x ...}约定命名以大写字母开头，且只能由new来执行
+44.new。静态实例化，通过构造函数添加获取，this指向函数
+45.Object.keys()获取对象中所有属性，values获取内容  assain（要拷贝进的，被拷贝的）来拷贝
+46.reduse等实例方法
+47.原型 prototype  prototype.constructor指向构造函数
+48.公共部分放在原型对象，原型继承
+
+原型链
+
+
+49.浅拷贝 const a = {...aa}或者assain , arr.concat,深拷贝（还未学习）
+
+50.异常处理，throw抛出问题throw new Error（） try{ 可能错误的代码} 配合catch（err）拦截，最后finally输出finally{ }     debugger断点检查
+
+
+51.call 找到this指向 fn.call(要指向的，其他参数）
+52.apply（指定的this，传递的值包含在数组里）
+53.bind（指定的this，其他参数）新拷贝的函数不调用

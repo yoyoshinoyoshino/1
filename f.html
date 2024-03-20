@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <style>
+    .b{
+        display: inline-block;
+    }
+   </style>
+<span>minhzi</span>
+    <div class="b"></div>
+
+    <div class="a">
+
+    <button class="s">开�?</button>
+  <button class="c">结束</button>
+
+</div>
+<script>
+    const arr =[
+        'a','b','c','d'
+    ]
+    const btn =document.querySelector('.s')
+    const btn1 =document.querySelector('.c')
+    const b=document.querySelector('.b')
+    btn.addEventListener('click',function(){
+ n = setInterval(function(){
+    let ran=Math.floor(Math.random()*4)
+    b.innerHTML=arr[ran]
+},100)
+        alert(1)
+    },true)
+    btn1.addEventListener('click',function(){
+        clearInterval(n)
+        alert(2)
+    },true)
+    b.addEventListener('click',function(){
+        b.innerHTML=('a')
+        alert(3)
+    },true)
+
+</script>
+</body>
+</html>
